@@ -14,7 +14,7 @@ gulp.task('js', () => {
             presets: ['es2015']
           }))
           .pipe(uglify({mangle : true}))
-          .pipe(rename('textType.min.js'))
+          .pipe(rename('typewriter.min.js'))
           .pipe(gulp.dest('./dist'))
 })
 
@@ -30,3 +30,4 @@ gulp.task('browser-sync', () => {
 })
 
 gulp.task('default', ['js', 'browser-sync'])
+gulp.task('build', ['js', 'browser-sync'])
