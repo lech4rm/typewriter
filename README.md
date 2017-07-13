@@ -3,23 +3,26 @@
 ## Version
 `1.0.0`
 
+## Demo
+Click [here](https://plnkr.co/edit/Fj7vmPgqxE8aS5cQZWeZ?p=preview) to view a plunkr.
+
 ## Usage
 This plugin requires jQuery.
 Add the following CDN after including jQuery in your project
 
+
+`<script src="https://cdn.rawgit.com/lech4rm/typewriter/4e71c107/dist/typewriter.min.js"></script>`
+
+Optional CSS blinking effect css
+
+`<link rel="stylesheet" href="https://cdn.rawgit.com/lech4rm/typewriter/4e71c107/dist/blinker.css"></link>`
+
+Add the typewriter method to your element and pass in an object with the text property
+
+```javascript
+$(element).typewriter({ text : 'Some dank text!' })        // check below for additional parameters
 ```
-<script src="https://cdn.rawgit.com/lech4rm/typewriter/4e71c107/dist/typewriter.min.js"></script>
 
-<! -- optional CSS blinking effect -->
-
-<link rel="stylesheet" href="https://cdn.rawgit.com/lech4rm/typewriter/4e71c107/dist/blinker.css"></link>
-
-<script>
-// call the function to the required element and pass in the textType
-
-$(element).typewriter({ text : 'Some dank text!' })
-</script>
-```
 ### Options
 
 You can pass in the following options along with the text property as a parameter to the typewriter function.
@@ -48,4 +51,4 @@ You need npm and gulp-cli for this to work
 
 or
 
-'`npm install && gulp build` ( if you only need to minify and transpile app.js)
+`npm install && gulp build` ( if you only need to minify and transpile app.js)
